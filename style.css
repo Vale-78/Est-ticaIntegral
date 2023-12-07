@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Whisper&display=swap');
 
+:root{ /*Variables*/
+    --blanco: white;
+    --negro: black;
+    --gris: gray;
+    --colorPrincipal:  #0739a1;
+    --colorFondo: #ce5d5d;
+}
 *{
     padding: 0%;
     margin: 0%;
@@ -20,33 +27,36 @@ body{
     }
     /* significa fondo fijo */
 }
+/*HEADER*/
 header p{
     font-size: medium;
 }
 header{
-    background-color: #333;
+    background-color: var(--negro);
     color: #fff;
     padding: 15px;
     text-align: center;
 }
-header h1{
-    color:white
-}
-header nav ul{
-    list-style: none;
+.navegador{
     display: flex;
-    justify-content: flex-end;
-    background-color: rgb(196, 134, 134);
-    color: white;
-    padding: 10px 0 10px 0;    
+    flex-direction: row;
+    gap: 3rem;
 }
-header nav ul li{
-    padding: 0 5px 0 5px;    
-    font-size: larger;
+
+.enlaces{
+    padding: 8px 20px;
+	text-decoration: none;
+	background: var(--colorFondo);
+	float: center;
+	border-radius: 6px;
+	border: 0;
 }
-header nav ul li:hover{
-    color: aqua;    
+
+.enlaces:hover{
+    transition: background 2s, color 2s;
+    color: var(--blanco);
 }
+
 main #inicio{
     background-image: url("./assets/estética.jpeg");
     background-repeat: no-repeat;
@@ -123,3 +133,42 @@ footer nav ul li{
 footer nav ul li:hover{
     color: aqua;    
 }
+
+
+/*FOOTER*/
+
+.footer{
+    background-color: var(--negro);
+ }
+ 
+ .botones{
+     min-width: 45rem;
+     display: flex;
+     justify-content: end;
+ }
+ 
+ .botones a {
+     text-decoration: none;
+     font-size: 28px;
+     width: 60px;
+     height: 60px;
+     line-height: 60px;
+     margin: 20px;
+     text-align: center;
+     background: var(--gris);
+     color: var(--blanco);
+     border-radius: 50%;
+     box-shadow: 2px 2px 5px var(--blanco);
+     transition: all .4s ease-in-out;
+ }
+   
+ .botones a:hover {
+     transform: scale(1.2);
+ }
+ 
+ .barra{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+ }
+ 
