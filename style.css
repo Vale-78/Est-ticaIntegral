@@ -92,22 +92,41 @@ main #nosotros article{
 main #productos {
     text-align: center;
  }
+ main #productos h1 {
+    color:  var(--colorFondo);
+    font-size: xxx-large;
+    font-weight: bolder;
+    padding-top: 2%;
+ }
+
 main #productos .productosContainer{
     display: flex;
+    flex-direction: column;
 }
 main #productos article{
-   border: 1px solid #ccc;
-   padding: 5px;
-   margin: 5px;
-   width: 20%;
-}
-main #productos article div{
     display: flex;
-    flex-direction: column;
- }
-main #productos img{
+    padding: 1% 1%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main #productos h2{
+    background: var(--colorFondo);
     width: 100%;
-    height: auto;
+}
+main #productos article .articleContainer{
+    display: flex;
+    padding: 2%;
+ }
+ main #productos article .articleContainer .tips{
+    border: 1px solid  var(--colorFondo);
+    margin: 0 1%;
+    padding: 0 1%;
+ }
+ 
+main #productos img{
+    width: 15em;
+    height: 15em;
 }
 footer{
     background-color: #333;
