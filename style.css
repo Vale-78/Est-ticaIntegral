@@ -117,6 +117,9 @@ main #productos h2{
     background: var(--colorFondo);
     width: 100%;
 }
+main #productos a{
+    font-size: large;
+}
 main #productos article .articleContainer{
     display: flex;
     padding: 2%;
