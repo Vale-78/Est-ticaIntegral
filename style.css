@@ -98,6 +98,9 @@ main #productos {
     font-weight: bolder;
     padding-top: 2%;
  }
+ main #productos h3 {
+    color:  var(--colorFondo);
+ }
 
 main #productos .productosContainer{
     display: flex;
