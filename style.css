@@ -23,6 +23,27 @@ body{
     background-size: cover;
     /* significa fondo fijo */
 }
+.contenedor{ /*Es para mantener los elementos unidos*/
+    width: min(90%,120rem); /*Especifica el area del contenido del alto y ancho*/
+    margin: 0 auto; /*Es para separar los elementos*/
+}
+a{
+    text-decoration: none;
+}
+/*Utilidades: son clases que dan algun estilo para utilizarlo en contenedores/elementos*/
+
+.no-margin{
+/*quitan margen entre los elementos*/
+margin: 0;
+}
+
+.no-padding{ /*Para que no haya separacion*/
+padding: 0;
+}
+
+.centrar-texto{
+text-align: center;
+}
 /*HEADER*/
 header p{
     font-size: medium;
@@ -73,7 +94,7 @@ header{
 #nosotros h1,
 main .servicios h1,
 main #productos h1,
-main .ofertas h1 {
+main .ofertas h1{
     text-align: center;
     color: var(--colorFondo);
     font-size: xxx-large;
@@ -223,6 +244,109 @@ main #servicios .servicios article {
     border-radius: 10px;
     cursor: poiner;
 }
+/*----------------------Sobre Curso-------------------*/
+
+.cursos{
+    list-style: none;
+}
+
+.elemento-curso{
+    border-bottom: 1px solid var(--gris);
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.elemento-curso:last-of-type{
+    border-bottom: none;
+}
+
+.texto-bold{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.texto-normal{
+    font-weight:200;
+}
+
+.contenido-main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+.curso-imagen{
+    max-width: 40rem;
+}
+
+.curso{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.curso:last-of-type{
+    border: none;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 3rem;
+    border: 1px solid var(--negro);
+}
+
+main #contacto h1 {
+    text-align: center;
+    color: var(--colorFondo);
+    font-size: xxx-large;
+    font-weight: bolder;
+    padding: 10% 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main #contacto .sidebar h1 {
+    padding: 0%;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+
+.campo_label{
+    flex: 0 0 12rem; /*Espacio que ocupa hasta que encuentre otro elemento y lo complete y indica el creciemietno y descrecimiento*/
+    padding-right: 2rem;
+    
+}
+
+.campo_input{
+    flex: 1;
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.campo_textarea{
+    height: 20rem;
+    
+}
+
+/*-----------------------FOOTER------------------------*/
 footer{
     background-color: #333;
     color: #fff;
@@ -247,9 +371,6 @@ footer nav ul li{
 footer nav ul li:hover{
     color: aqua;    
 }
-
-
-/*FOOTER*/
 
 .footer{
     background-color: var(--negro);
@@ -285,6 +406,7 @@ footer nav ul li:hover{
          justify-content: space-around;
          align-items: center;
  }
+ /*-----------------------@MEDIA Responsive------------------------*/
  @media (max-width: 750px) {
     main .servicios h1,
     main #productos h1,
