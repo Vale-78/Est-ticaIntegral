@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -13,12 +12,10 @@
 <body>
     <header class="logo">
         <div class="barra">
-            <a href="./index.html">
-                <img src="./assets/Logo6.jpg" alt="" style="width: 100px; height: 100px; float: left;">
-            </a>
+                <img src="./assets/Logo6.jpg" alt="" style="width: 60px; height: 60px; float: left;">
             <nav class="navegar">
-            <a href="./index.html" class="enlaces centrar textos">Inicio</a>
-            <a href="./nosotros.html" class="enlaces centrar textos">Nosotros</a>
+            <a href="#inicio" class="enlaces centrar textos">Inicio</a>
+            <a href="#nosotros" class="enlaces centrar textos">Nosotros</a>
             <a href="#servicios" class="enlaces centrar textos">Servicios</a>
             <a href="#productos" class="enlaces centrar textos">Productos</a>
             <a href="#ofertasDeServicios" class="enlaces centrar textos">Ofertas</a>
@@ -29,7 +26,7 @@
     </header>
    <main>
     <section id="inicio">
-        <h1>Estética Integral</h1>
+        <h1>Estética Integral JVC</h1>
         <button><a href="#productos">Productos</a></button>
         <button type="button" class="btn btn-danger">Danger</button>
         <button href="#ofertasDeServicios" type="button" class="btn btn-primary" disabled>Ofertas</button>
@@ -38,35 +35,40 @@
     </section>
     <section id="nosotros">
         <h1>Sobre Nosotros</h1>
-        <div>
-            <h3>Atención personalizada</h3>
-            <p>Un salón de estética spa equipado con tecnología de punta.
-                Diversidad en técnicas para que elijas el tratamiento que prefieras. Tratamientos no invasivos y sin intervenciones quirúrgicas. Nuestro centro de belleza te ofrece el profesionalismo y la calidad que buscas, todos nuestros resultados son inmejorables y completamente naturales, nadie podrá creer el cambio que lograrás, siempre con nuestra recomendación del apoyo domiciliario que te ofreceremos tener tu hogar. Aparatología de primera línea.
-                En nuestra estética en Embalse tenemos promociones exclusivas, no ofrecemos precio, sino, calidad. Hay muchos centros de estética en Embalse, pero vos sabes que debes elegir el mejor, y el nuestro está comprobado que es el mejor de todos.
-                Te invitamos a conocerlo.
-                ¿Qué esperas?</p>
-                <img src="" alt="">
-        </div>
-        <div>
-            <h3>¿Quiénes somos?</h3>
-            <p>Somos un equipo de profesionales, con el fin de lograr un momento agradable de ocio y salud donde ofrecemos tratamientos faciales, corporales, sistemas de relajación logrando tu bienestar.</p>
-            <img src="" alt="">
-        </div>
-           <article>
-            <div>
-                <h3>Objetivos</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aliquid recusandae enim velit est amet tenetur sequi dignissimos atque cupiditate unde debitis voluptatum suscipit impedit, doloribus sit. Odio, molestias nobis?</p> 
-            </div>
-            <div>
-                <h3>Visión</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aliquid recusandae enim velit est amet tenetur sequi dignissimos atque cupiditate unde debitis voluptatum suscipit impedit, doloribus sit. Odio, molestias nobis?</p> 
-            </div>
-            <div>
-                <h3>Equipo</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aliquid recusandae enim velit est amet tenetur sequi dignissimos atque cupiditate unde debitis voluptatum suscipit impedit, doloribus sit. Odio, molestias nobis?</p> 
-            </div>
-        </article>
+        <div class="nosotros">
+         
+            <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header"> <h3>Estética Integral JVC</h3></div>
+                <div class="card-body">
+                  <h5 class="card-title">Atención personalizada</h5>
+                  <p class="card-text">Un salón de estética spa equipado con tecnología de punta.
+                    Diversidad en técnicas para que elijas el tratamiento que prefieras. Tratamientos no invasivos y sin intervenciones quirúrgicas. Nuestro centro de belleza te ofrece el profesionalismo y la calidad que buscas.
+                    Te invitamos a conocerlo.
+                    ¿Qué esperas?</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/Logo6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>¿Quiénes somos?</h3>
+            <p class="card-text">Somos un equipo de profesionales, con el fin de lograr un momento agradable de ocio y salud donde ofrecemos tratamientos faciales, corporales, sistemas de relajación logrando tu bienestar.</p>
+                </div>
+              </div>
+            
+              <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header"> <h3>Estética Integral JVC</h3></div>
+                <div class="card-body">
+                  <h5 class="card-title">Horarios</h5>
+                  <p class="card-text texto-bold">Lunes - Viernes <span class="texto-normal">9:30 hs a 15:00 hs y 16:00hs a 18:00hs</p>
+                    <p class="card-text texto-bold">Sabados <span class="texto-normal">10:00hs a 16:30 hs</span></p>
+                    <button href="#ofertasDeServicios" type="button" class="btn btn-primary" disabled>Reservar Turno</button>
+                    <p class="card-text">A parte de nuestros productos, pueden ver todas las ofertas que ofrecemos incluido pagando con cuotas s/interes y con cualquier tipo de tarjetas.</p>
+                    <button href="#ofertasDeServicios" type="button" class="btn btn-primary" disabled>Ofertas</button>
+                </div>
+              </div>    
     </section>
+
     <section id="productos">
         <h1>Nuestros Productos</h1>
         <p>Encontrá el producto que estás buscando</p>
@@ -143,10 +145,12 @@
             </article>
         </div>
     </section> 
-    <div class="servicios"> 
-        <h1>Nuestros servicios</h1>
-    </div>
+  
     <section id="servicios">
+        <div class="servicios"> 
+            <h1>Nuestros servicios</h1>
+        </div>
+        <div class="servicios">
         <article>
             <h3> MANICURA</h3>
             <div class="info-servicios">
@@ -179,13 +183,15 @@
                 <button>Ofertas</button>
             </div>    
             </article>
+        </div>
     </section>
-
-    <div class="ofertas">
-          <h1>Ofertas</h1>
-    </div>
+   
   
     <section id="ofertasDeServicios">    
+        <div class="ofertas">
+            <h1>Ofertas</h1>
+      </div>
+      <div class="ofertasDeServicios">
             <article>
                 <h2>Manicura</h2>
                     <div class="info-ofertas">
@@ -244,7 +250,8 @@
                             <p>$6000</p>
                             <button>Turno</button>
                     </div>
-            </article>     
+            </article>  
+        </div>   
     </section>
 
     
