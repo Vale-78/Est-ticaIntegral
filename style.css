@@ -108,8 +108,10 @@ main #nosotros .nosotros{
 main #nosotros .nosotros div{
     margin: 0 10px;
 }
+main #nosotros .colorCard{
+    background-color: #c19fde;
+}
 main #nosotros .nosotros div.card.text-bg-danger.mb-3{
-    background-color: red;
     margin: 20px;
 }
 r mb-3
