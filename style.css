@@ -103,6 +103,7 @@ main #nosotros{
 main #nosotros .nosotros{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 main #nosotros .nosotros div{
     margin: 0 10px;
@@ -167,6 +168,7 @@ main #servicios .servicios {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 main #servicios .servicios article {
@@ -195,6 +197,7 @@ main #servicios .servicios article {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #ofertasDeServicios .ofertasDeServicios article {
@@ -294,3 +297,10 @@ footer nav ul li:hover{
         margin-left: 0px;
     }
   }
+  @media (max-width: 380px) {
+    main #productos article .articleContainer{
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+  }
+ }
