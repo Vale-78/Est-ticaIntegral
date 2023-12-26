@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Estética Integral</title>
 </head>
 <body>
     <header class="logo">
         <div class="barra">
             <a href="./index.html">
-                <img src="./assets/Logo1.jpg" alt="" style="width: 100px; height: 100px; float: left;">
+                <img src="./assets/Logo6.jpg" alt="" style="width: 100px; height: 100px; float: left;">
             </a>
             <nav class="navegar">
             <a href="./index.html" class="enlaces centrar textos">Inicio</a>
             <a href="./nosotros.html" class="enlaces centrar textos">Nosotros</a>
-            <a href="./servicios.html" class="enlaces centrar textos">Servicios</a>
-            <a href="./productos.html" class="enlaces centrar textos">Productos</a>
+            <a href="#servicios" class="enlaces centrar textos">Servicios</a>
+            <a href="#productos" class="enlaces centrar textos">Productos</a>
+            <a href="#ofertasDeServicios" class="enlaces centrar textos">Ofertas</a>
             <a href="#" class="enlaces centrar textos">Contactos</a>
         </nav>
         </div>
@@ -29,10 +31,13 @@
     <section id="inicio">
         <h1>Estética Integral</h1>
         <button><a href="#productos">Productos</a></button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button href="#ofertasDeServicios" type="button" class="btn btn-primary" disabled>Ofertas</button>
+        <button type="button" class="btn btn-outline-primary" disabled>Contáctanos</button>
         <li><a href="#inicio" alt="">Volver</a></li>
     </section>
     <section id="nosotros">
-        <h2>Sobre Nosotros</h2>
+        <h1>Sobre Nosotros</h1>
         <div>
             <h3>Atención personalizada</h3>
             <p>Un salón de estética spa equipado con tecnología de punta.
@@ -62,31 +67,186 @@
             </div>
         </article>
     </section>
+    <section id="productos">
+        <h1>Nuestros Productos</h1>
+        <p>Encontrá el producto que estás buscando</p>
+        <div class="productosContainer">
+            <article >
+                <h2>Cuidado del cabello</h2>
+                <div class="articleContainer">
+                    <img src="./assets/cuidadoCapilar.jpeg" alt="">
+                    <div class="tips">
+                        <h3>Cuida tu alimentación</h3>
+                        <p>Nuestro cuerpo necesita nutrirse y el cabello no es la excepción, así que come saludablemente con una dieta que incluya frutas y vegetales para aportar todos los nutrientes  necesarios.</p>                    
+                        <h3>Masajes capilares</h3>
+                        <p>Con cierta frecuencia no olvides masajear tu cuero cabelludo para activar la circulación sanguínea en esta área.</p>                    
+                        <h3>Elije el agua tibia</h3>
+                        <p>Si quieres reducir el frizz de tu cabello y que luzca más brillante opta por enjuagarlo con agua tibia y si quieres mayores resultados enjuaga con agua fría.</p>                    
+                        <h3>Refuerza el cuidado</h3>
+                        <p> Elije productos para el aseo y cuidado diario de tu cabello que te ayuden a recuperar del daño, como la línea de Dove reconstrucción completa.</p>                    
+                    </div>
+                </div>
+                <a href="https://www.amazon.com/s?k=kit+productos+para+el+cabello&adgrpid=161899428704&hvadid=678840870851&hvdev=c&hvlocphy=20026&hvnetw=g&hvqmt=b&hvrand=12467634858262627754&hvtargid=kwd-2232851652860&hydadcr=11240_13660543&tag=hydglogoo-20&ref=pd_sl_53jx0w9o5k_b" target="_blank">Nuestros Productos para cuidado del cabello - Accede aquí</a>.</p>
+            </article>
+            <article >
+                <h2>Cuidado Facial</h2>
+                <div class="articleContainer">
+                    <div class="tips">
+                        <h3>Protégete del sol</h3>
+                        <p>Una vida de exposición al sol puede provocar arrugas, manchas de la edad y otros problemas de la piel.</p>                    
+                        <h3>No fumes</h3>
+                        <p>Fumar le da a tu piel un aspecto avejentado y contribuye a la formación de arrugas, también daña el colágeno y la elastina</p>                    
+                        <h3>Lleva una dieta saludable</h3>
+                        <p>Una dieta con alto contenido de aceite de pescado o suplementos de aceite de pescado y baja en grasas no saludables podría promover una piel más joven. Beber mucha agua ayuda a mantener la piel hidratada.</p>                    
+                        <h3>Trata tu piel con suavidad</h3>
+                        <p> Limita la duración del baño. El agua caliente y las duchas o baños prolongados eliminan los aceites naturales de la piel. Ideal, utiliza nuestra línea de tratamientos faciales</p>                    
+                    </div>
+                    <img src="./assets/cuidadoFacial.jpeg" alt="">
+                </div>
+                <a href="https://www.amazon.com/s?k=produtos+skin+care&adgrpid=152917837137&hvadid=678750059664&hvdev=c&hvlocphy=20026&hvnetw=g&hvqmt=b&hvrand=7562225236938048650&hvtargid=kwd-354472571268&hydadcr=1877_13652042&tag=hydglogoo-20&ref=pd_sl_9fxro5tn1w_b" target="_blank">Nuestros Productos para cuidado facial - Accede aquí</a>.</p>
+            </article>
+            <article >
+                <h2>Cuerpo y piernas</h2>
+                <div class="articleContainer">
+                    <img src="./assets/cuidadoCuerpoYpiernas.jpeg" alt="">
+                    <div class="tips">
+                        <h3>Evita estar quieta por mucho tiempo</h3>
+                        <p>Ya sea sentada o de pie, procura hacer pequeños estiramientos y caminatas de 10 minutos cada 2 horas. Así mejorarás tu circulación.</p>                    
+                        <h3>Sube las piernas al llegar a casa</h3>
+                        <p>Haz de esto un hábito. Recuéstate sobre tu cama y colócalas sobre la pared durante 15 minutos. Es súper efectivo para evitar las várices.</p>                    
+                        <h3>Date un masaje después de la ducha</h3>
+                        <p>Termina tu baño con un chorro de agua fría. Al finalizar, date un masaje desde el pie a la rodilla, para activar el retorno sanguíneo.</p>                    
+                        <h3>Limpia tu piel con un jabón corporal o gel hidratante</h3>
+                        <p>Utiliza productos de origen natural o botánico para que tu piel no se reseque. Dependiendo de tu tipo de piel, puedes elegir entre un jabón o gel humectante.</p>                    
+                    </div>
+                </div>
+                <br>
+                <a href="https://www.amazon.com/s?k=productos+para+el+cuidado+de+la+piel&adgrpid=155242570735&hvadid=678074257122&hvdev=c&hvlocphy=20026&hvnetw=g&hvqmt=b&hvrand=2435514849611207284&hvtargid=kwd-1446525092&hydadcr=18678_13654588&tag=hydglogoo-20&ref=pd_sl_4ce73y6uc9_b" target="_blank">Nuestros Productos para cuidado de piernas y cuerpo - Accede aquí</a>.</p>
+            </article>
+            <article >
+                <h2>MakeUp y Uñas</h2>
+                <div class="articleContainer">
+                    <div class="tips">
+                        <h3>Antes de pintar tus uñas, límpialas sin acetona</h3>
+                        <p>Limpiar las uñas con un algodón con quitaesmaltes pero sin acetona, así se retiran posibles restos de esmaltes, y de cremas.</p>                    
+                        <h3>Aplica base antes del esmalte</h3>
+                        <p>Aplicar una base transparente con un extra de vitaminas, nutrientes y antioxidantes para regenerar las uñas y mejorar su flexibilidad .</p>                    
+                        <h3>Coloca dos capas de laca de uñas</h3>
+                        <p>Para que tu manicura dure más tiempo, aplicar dos capas de esmalte pero muy finas así se evita que salte el color y salirse de la zona de la uña.</p>                    
+                        <h3>Aplica Top Coat después de esmaltar</h3>
+                        <p>El top coat además de aportar brillo a tus uñas después de aplicar la laca, protege su color y prolonga que no se desgaste el esmalte. </p>                    
+                    </div>
+                    <img src="./assets/makeUpyUñas.jpeg" alt="">
+                </div>
+                <br>
+                <a href="https://www.amazon.com/s?k=productos+u%C3%B1as&__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2F6PUN1A442JX&sprefix=productos+u%C3%B1as%2Caps%2C260&ref=nb_sb_noss_1" target="_blank">Nuestros Productos para MakeUp y Uñas - Accede aquí</a>.</p>
+            </article>
+        </div>
+    </section> 
+    <div class="servicios"> 
+        <h1>Nuestros servicios</h1>
+    </div>
     <section id="servicios">
-        <h2>Nuestros servicios</h2>
-        <article >
+        <article>
             <h3> MANICURA</h3>
-            <div>
-               <img src="" alt="">
-               <p>¡Tus manos hablan de ti! Cuídalas con nuestros servicios de manicura: limar y esmaltar, manicura básica, manicura SPA, etc.</p>
-           </div>
+            <div class="info-servicios">
+                <img src="./assets/manicure1.webp" alt="Esmaltados permanentes y semipermanentes">
+                <p class="descripcion">¡Tus manos hablan de ti! Cuídalas con nuestros servicios de manicura: limar y esmaltar, manicura básica, manicura SPA, etc.</p>
+                <button>Ofertas</button>
+            </div>
         </article>
-        <article >
+        <article>
             <h3>DEPILACIÓN DEFINITIVA</h3>
-            <div>
-               <img src="" alt="">
-               <p>Elimina el bello corporal y facial con lo último en depilación definitiva. Láser Diodo Ice de triple longitud para un tratamiento seguro, indoloro y eficiente</p>
-           </div>
+            <div class="info-servicios">
+               <img src="./assets/depilacion definitiva.jpg" alt="Depilacion definitiva">
+               <p class="descripcion">Elimina el bello corporal y facial con lo último en depilación definitiva. Láser Diodo Ice de triple longitud para un tratamiento seguro, indoloro y eficiente</p>
+               <button>Ofertas</button>
+            </div>
         </article>
-        <article >
+        <article>
             <h3>TRATAMIENTOS FACIALES</h3>
-            <div>
-               <img src="" alt="">
-               <p>Regenera la piel y mejora el aspecto de tu rostro. Presume de una piel limpia, sana y radiante.</p>
+            <div class="info-servicios">
+               <img src="./assets/Tratamiento-facial-.jpg" alt="Tratamiento Facial">
+               <p class="descripcion">Regenera la piel y mejora el aspecto de tu rostro. Presume de una piel limpia, sana y radiante.</p>
+               <button>Ofertas</button>
            </div>
         </article>
-        
+        <article>
+            <h3>TRATAMIENTOS CAPILARES</h3>
+            <div class="info-servicios">
+                <img src="./assets/tratamiento capilar.jpg" alt="Tratamientos de cuidado capilar">
+                <p class="descripcion">Los mejores tratamientos reparadores para el cabello dañado. Evita la rotura del pelo y llénalo de brillo con los productos capilares de Revlon, Pantene, Olaplex, L’Oréal, etc.</p>
+                <button>Ofertas</button>
+            </div>    
+            </article>
     </section>
+
+    <div class="ofertas">
+          <h1>Ofertas</h1>
+    </div>
+  
+    <section id="ofertasDeServicios">    
+            <article>
+                <h2>Manicura</h2>
+                    <div class="info-ofertas">
+                        <li>Esmaltado Permanente</li>
+                            <p>$2500</p>
+                            <button>Turno</button>
+                        <li>Kapping Gel</li>
+                            <P>$3000</P>
+                            <button>Turno</button>
+                        <li>Dual System</li>
+                            <p>$4000</p>
+                            <button>Turno</button>
+                    </div>        
+            </article>
+
+            <article>
+                <h2>Depilacion Definitiva</h2>
+                    <div class="info-ofertas">
+                        <li>Axilas + cavado + piernas</li>
+                            <p>$4000</p>
+                            <button>Turno</button>
+                        <li>Rostro</li>
+                            <p>$2000</p>
+                            <button>Turno</button>
+                        <li>Axilas + Cavado + Tdc</li>
+                            <p>$3500</p>
+                            <button>Turno</button>
+                    </div>
+            </article>
+
+            <article>
+                <h2>Tratamientos Faciales</h2>
+                    <div class="info-ofertas">
+                        <li>Limpieza Facial</li>
+                            <p>$3000</p>
+                            <button>Turno</button> 
+                        <li>Peeling</li>
+                            <p>$3500</p>
+                            <button>Turno</button>
+                        <li>Lifting Facial</li>
+                            <p>$5000</p>
+                            <button>Turno</button>
+                    </div>
+            </article>
+
+            <article>
+                <h2>Tratamientos Capilares</h2>
+                    <div class="info-ofertas">
+                        <li>Botox Capilar</li>
+                            <p>$6000</p>
+                            <button>Turno</button>
+                        <li>Detox con Colageno</li>
+                            <p>$5500</p>
+                            <button>Turno</button>
+                        <li>Masaje Capilar</li>
+                            <p>$6000</p>
+                            <button>Turno</button>
+                    </div>
+            </article>     
+    </section>
+
     
    </main>
    <footer class="footer">
@@ -106,6 +266,7 @@
       
     </section>
       <section>
+        <title>Estética Integral</title>
         <a href="#inicio">Subir</a>.</p>
         <a href="https://www.lanacion.com.ar/recetas/" target="_blank">Otras Recetas</a>.</p>
       </section>
@@ -114,5 +275,7 @@
         <a href="https://www.lanacion.com.ar/recetas/" target="_blank">Otras Recetas</a>.</p>
       </section>
    </footer>
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </body>
 </html>
