@@ -260,7 +260,6 @@
     <section id="contacto">
         <div class="titleContacto">
             <h1>Contáctanos</h1>
-            <button id="show-process" onclick="showProcess()">Formulario</button>
         </div>
         <br>
         <br>
@@ -273,31 +272,29 @@
                         <div class="campo step" id="step1">
                                 <label for="" class="campo_label">Nombre</label>
                                 <input id="nombre" class="campo_input" placeholder="Ingrese su nombre" type="text" required>
-                            <button type="button" onclick="nextStep(1)">Siguiente</button>
+                            <button class="boton boton-primario" type="button" onclick="nextStep(1)">Siguiente</button>
                         </div>
 
                         <div id="step2" class="step campo">
-                            <div>
                                 <label for="" class="campo_label">Correo</label>
-                                <input id="email" class="campo_input" placeholder="Ingrese su numero" type="email" required>
-                            </div>  
-                            <div>
-                                <button type="button" onclick="nextStep(2)">Siguiente</button>
-                                <button type="button" onclick="prevStep(2)">Anterior</button>
-                            </div>   
+                                <input id="email" class="campo_input" placeholder="Ingrese su email" type="email" required>  
+                            <br>
+                                <button class="boton boton-primario" type="button" onclick="nextStep(2)">Siguiente</button>
+                                <button class="boton boton-primario" type="button" onclick="prevStep(2)">Anterior</button>
+                              
                         </div>
 
                         <div id="step3" class="step campo">
                             <label for="" class="campo_label">Mensaje</label>
-                            <textarea class="campo_textarea campo_input" placeholder="Mensaje...." cols="35" rows="10"></textarea>
-                             <div>
-                                <button type="submit" onclick="send(event)">Enviar</button>
-                                <button type="button" onclick="prevStep(3)">Anterior</button>
+                            <textarea id="mensaje" class="campo_textarea campo_input" placeholder="Mensaje...." cols="35" rows="10"></textarea>
+                            <div>
+                                <button class="boton boton-primario" type="submit" onclick="send(event)">Enviar</button>
+                                <button class="boton boton-primario" type="button" onclick="prevStep(3)">Anterior</button>
                             </div>
                         </div>
-                        <a class="boton boton-primario" onclick="send(event)" >Enviar</a>
-                    </div>
+                        <!-- <a class="boton boton-primario" onclick="send(event)" >Enviar</a> -->
                     </form>
+                </div>
                 </li>
             
                         <div id="user-data">
@@ -321,9 +318,7 @@
    <footer class="footer">
     <section>
         <div class="barra">
-            <a href="./index.html">
-             <h1>Estetica Integral</h1>
-            </a>
+             <h2>Estetica Integral JVC</h2>
         <section class="botones">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
@@ -334,18 +329,14 @@
       </div>
       
     </section>
-      <section>
-        <title>Estética Integral</title>
-        <a href="#inicio">Subir</a>.</p>
-        <a href="https://www.lanacion.com.ar/recetas/" target="_blank">Otras Recetas</a>.</p>
-      </section>
-      <section id="contactos">
-        <a href="#inicio">Subir</a>.</p>
-        <a href="https://www.lanacion.com.ar/recetas/" target="_blank">Otras Recetas</a>.</p>
+      <section class="accesos">
+        <a href="#inicio">Inicio</a>
+        <br>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#">@esteticaIntegral.com</a>
       </section>
    </footer>
-   
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 <script src="./main.js"></script>
 </body>
 </html>

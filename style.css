@@ -365,7 +365,6 @@ main #contacto .sidebar h1 {
 }
 
 .campo_label{
-    flex: 0 0 12rem; /*Espacio que ocupa hasta que encuentre otro elemento y lo complete y indica el creciemietno y descrecimiento*/
     padding-right: 2rem;
     
 }
@@ -391,15 +390,26 @@ main #contacto .sidebar h1 {
 }
 #contacto .boton {
     text-decoration: none;
-    border-radius: 18px;
+    border-radius: 15px;
     display: inline-block;
     color: var(--blanco);
-    font-size: 2.2rem;
-    padding: 1rem 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
     text-transform: uppercase;
+    margin: 0 0.5rem;
+    max-width: min-content;
 }
-
+#contacto .step{
+    display: flex;
+    flex-direction: column
+}
+#contacto #user-data {
+    text-align: center;
+}
+#contacto #user-data p{
+    font-size: xx-large;
+    font-weight: bold;
+}
 /*-----------------------FOOTER------------------------*/
 footer{
     background-color: #333;
@@ -407,7 +417,7 @@ footer{
     padding: 15px;
     text-align: center;
 }
-footer h1{
+footer h2{
     color:white
 }
 footer nav ul{
@@ -424,6 +434,11 @@ footer nav ul li{
 }
 footer nav ul li:hover{
     color: aqua;    
+}
+footer .accesos a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
 }
 
 .footer{
@@ -475,6 +490,13 @@ footer nav ul li:hover{
         margin-left: 0px;
     }
   }
+  @media (max-width: 560px) {
+   .enlaces{
+    padding: 2px 5px;
+	float: center;
+}
+ }
+  
   @media (max-width: 380px) {
     main #productos article .articleContainer{
     display: flex;

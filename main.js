@@ -43,7 +43,7 @@ function send(event) {
 
     nombre = document.getElementById('nombre').value;
     email = document.getElementById('email').value;
-    mensaje = document.getElementById('password').value;
+    mensaje = document.getElementById('mensaje').value;
     alert('Formulario Enviado');
     console.log(nombre, email, mensaje);
 
@@ -51,9 +51,9 @@ function send(event) {
     datos.innerHTML = `
     <p>Nombre: ${nombre}</p>
     <p>Email: ${email}</p>
-    <p>Contraseña: ${mensaje}</p>`
+    <p>Mensaje: ${mensaje}</p>`
 
-    //document.getElementById('process-container').style.display = 'none';
+    document.getElementById('process-container').style.display = 'none';
 }
 
 showStep(currentStep);
