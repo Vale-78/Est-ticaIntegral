@@ -63,11 +63,6 @@ header{
     width: 50%;
     height: 50%;
 }
-.navegador{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-}
 
 .enlaces{
     padding: 8px 20px;
@@ -157,7 +152,7 @@ main #nosotros .colorCard{
 main #nosotros .nosotros div.card.text-bg-danger.mb-3{
     margin: 20px;
 }
-r mb-3
+
 
 main #nosotros article{
     display: flex;
@@ -446,17 +441,20 @@ footer .accesos a{
  }
  
  .botones{
-     min-width: 45rem;
+     min-width: 30rem;
      display: flex;
-     justify-content: end;
+     flex-wrap: wrap;
+     flex-flow: row wrap;
  }
  
  .botones a {
      text-decoration: none;
-     font-size: 28px;
+     font-size: 30px;
      width: 60px;
      height: 60px;
-     line-height: 60px;
+     left: 50px;
+     right: 50px;
+     line-height: 50px;
      margin: 20px;
      text-align: center;
      background: var(--gris);
